@@ -1,0 +1,245 @@
+/*global*/
+*{
+   box-sizing: border-box; 
+
+}
+a{
+    text-decoration: none;
+}
+h1,h2,p{
+    margin: 0;
+    color:white;
+}
+.wrapper {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    height: 650px;
+    width: 1550px;
+    background-color: #40e0d0;
+}
+
+.product {
+    width: 1500px;
+    height: 600px;
+    padding: 16px;
+    font-size: 0; /* 消除空白間距 */
+}
+
+.product{
+    width:1500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 16px;
+    font-size: 0; /* 消除空白間距 */
+   
+}
+ .product .info{
+    width:690px;
+    display:inline-block;
+    background-color: #272727;
+    vertical-align: top;
+    height: 100%;
+    padding: 10px;
+}
+.product .picture{
+    display: inline-block;
+    vertical-align: top;
+    width:680px;
+    height: 100%;
+    overflow: hidden;
+}
+.product .picture img{
+ height: 100%;
+   display: block;
+}
+.product .name{
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 400; /* 較細的字重 */
+    letter-spacing: 1px;
+    
+   
+
+}
+.product .ti{
+    margin-left: 20px;
+    font-size: 12px;
+    font-family:'Futura', 'Avenir', 'Trebuchet MS', 'Arial', sans-serif;
+   color: #40e0d0;
+   margin-bottom: 5px;
+}
+
+.product .price {
+    margin-left: 20px;
+    font-family: 'Roboto', 'Arial', sans-serif; /* 價格字體 */
+    font-weight: 1000; /* 粗體 */
+    font-size: 30px; /* 調整字體大小 */
+    color: white;/* 深色字體 */
+}
+.price-container {
+    display: flex; /* 讓價格和星號水平排列 */
+    align-items: center; /* 垂直居中對齊 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.product .stars {
+    font-family: 'Arial', sans-serif; /* 星號字體 */
+    font-weight: 1000; /* 正常字重 */
+    font-size: 30px; /* 星號字體大小 */
+    letter-spacing: 1px; /* 字距，讓星號之間有間隔 */
+    color: white;
+    margin-left: 260px;
+}
+.product .shop{
+    margin-left: 20px;
+    font-family: 'Futura', 'Avenir', 'Trebuchet MS', 'Arial', sans-serif;
+    font-weight: 400; /* 正常字重 */
+    font-style: italic; /* 斜體 */
+    font-size: 16px; /* 調整字體大小 */
+    color: #666; /* 使用較淡的顏色，使其不至於搶眼但仍可辨識 */
+}
+
+.product .description{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    font-weight: 200; /* 正常字重 */
+    font-size: 20px; /* 調整字體大小 */
+    line-height: 1.5; /* 行高，讓段落更易讀 */
+    color: white;
+
+}
+.product .read{
+    margin-left: 20px;
+    font-size: 20px;
+    font-family:'Roboto', 'Arial', sans-serif;
+   color: #40e0d0;
+   text-align: right;
+}
+.color-options {
+    display: flex;
+    gap: 5px; /* 每個顏色圈之間的間距 */
+}
+
+.color-circle {
+    width: 25px;  /* 圓圈的寬度 */
+    height: 25px; /* 圓圈的高度 */
+    border-radius: 50%; /* 圓形 */
+    cursor: pointer; /* 鼠標移上去變成手型 */
+}
+
+
+.color{
+    margin-left: 20px;
+    font-family: 'Roboto', 'Arial', sans-serif; 
+font-weight: 100; /* 正常字重 */
+font-size: 20px;
+margin-right: 10px;
+}
+
+.total {
+    display: flex; /* 使 .total 成為 Flex 容器 */
+   
+    padding: 10px; /* 添加內邊距 */
+}
+
+.total span {
+    display: flex; /* 使 span 成為 Flex 容器 */
+    align-items: center; /* 垂直對齊內容 */
+}
+
+.total p {
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    padding: 0 10px; /* 添加左右邊距，使間距一致 */
+    font-weight: 100; /* 正常字重 */
+    font-size: 20px;
+}
+
+.quen {
+    font-weight: bold; /* 加粗文字（可選） */
+    font-size: 20px;
+}
+
+.number {
+    
+    font-size: 20px; /* 調整數字的字體大小 */
+    font-weight: bold; /* 加粗數字（可選） */
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.totalprice{
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 100; /* 正常字重 */
+ }
+ .product .btn1{
+    color: white;
+    background-color: #272727;
+    display: block;
+    padding: 12px 30px;
+    line-height: 10px;
+    border-radius: 25px;
+    border:1px solid white;
+    font-family: 'Futura', 'Avenir', 'Trebuchet MS', 'Arial', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+.product .btn2{
+    color: black;
+    background-color: #40e0d0;
+    display: block;
+    padding: 12px 30px;
+    line-height: 10px;
+    border-radius: 25px;
+    font-family: 'Futura', 'Avenir', 'Trebuchet MS', 'Arial', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+.button-container {
+    display: flex; /* 使 .button-container 成為 Flex 容器 */
+    flex-direction: column; /* 垂直排列 */
+    gap: 10px; /* 按鈕之間的間距 */
+    margin-top: 20px; /* 上方間距（可選） */
+    
+}
+.options-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.option {
+    padding: 8px 16px;
+    font-family: 'Arial', sans-serif;
+    color:gray;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.optionde {
+    padding: 8px 16px;
+    font-family: 'Arial', sans-serif;
+    color:white;
+    font-size: 20px;
+    border-bottom: 1px solid #40e0d0;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
